@@ -89,7 +89,7 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">Last edited: 2016-10-31 14:57</p>
+            <p style="margin-top: 6px; margin-left: -2px;">Last edited: 2016-11-01 17:09</p>
           </hgroup>
   </slide>
 
@@ -220,41 +220,7 @@
 
 <p>Example 1: \(f(x,y) = 1\) on \(0 &lt; x,\,y &lt; 1\) and 0 otherwise. (&quot;Joint Uniform&quot;) Is this a density? Calculate: \(P(X &lt; 1/2, Y &lt; 1/2)\) and \(P(X &lt; Y)\).</p>
 
-<p>Example 2: (artificial) \(f(x,y) = cxy\) on \(0 &lt; x &lt; 1\), \(0 &lt; y &lt; 2\), and 0 otherwise. Determine \(c\). Calculate \(P(X &gt; 0.5, 0 &lt; Y &lt; 1)\) and \(P(Y &gt; X)\).</p>
-
-</article></slide><slide class=''><hgroup><h2>joint cdf - continuous case</h2></hgroup><article  id="joint-cdf---continuous-case">
-
-<p>The joint cdf \(F(x,y) = P(X \le x, Y \le y)\) can be calculated: \[F(x,y) = \int\limits_{-\infty}^y\!\int\limits_{-\infty}^x f(u,v)\,du\,dv\]</p>
-
-<p>It is a mystery of multivariable calculus how to obtain \(f\) from \(F\)</p>
-
-</article></slide><slide class=''><hgroup><h2>&quot;partial&quot; derivatives crash course - I</h2></hgroup><article  id="partial-derivatives-crash-course---i" class="build">
-
-<p>Maybe you got this far in your co-requisite! But your lives are a mystery to me.</p>
-
-<p>With a function \(g(x,y)\) you can take the derivative with respect to one variable at a time, holding the other variable constant. Notation: \[\frac{\partial}{\partial x}g(x,y) \quad \text{ and } \quad \frac{\partial}{\partial y}g(x,y).\]</p>
-
-<p>When \(g\) is &quot;smooth&quot; you get the nice result: \[\frac{\partial}{\partial y}\left[\frac{\partial}{\partial x}g(x,y)\right]=
-\frac{\partial}{\partial x}\left[\frac{\partial}{\partial y}g(x,y)\right],\] and we just call this: \[\frac{\partial^2}{\partial x\partial y}g(x,y).\]</p>
-
-</article></slide><slide class=''><hgroup><h2>joint cdf to joint density</h2></hgroup><article  id="joint-cdf-to-joint-density">
-
-<p>Just take all the &quot;partial&quot; derivatives in any order you like.</p>
-
-<p>\[\frac{\partial^2}{\partial x\partial y}F(x,y) = f(x,y)\]</p>
-
-<p>&quot;Proof: &#8230;&quot;</p>
-
-<p>Examples can be challenging! Consider \(f(x,y) = xy\) on \(0&lt;x&lt;1\), \(0&lt;y&lt;2\) (&#8230;to be revisited.)</p>
-
-</article></slide><slide class=''><hgroup><h2>marginal cdf and marginal density</h2></hgroup><article  id="marginal-cdf-and-marginal-density" class="build">
-
-<p>Just like in the discrete case we can recover information about \(X\) and \(Y\) individually by &quot;integrating out&quot; the other variable. The marginal densities are: \[{f_{\tiny{X}}}(x) = \int\limits_{-\infty}^\infty f(x,y)\,dy\\
-{f_{\tiny{Y}}}(y) = \int\limits_{-\infty}^\infty f(x,y)\,dx\]</p>
-
-<p>What about the marginal cdfs?</p>
-
-<p>Continue the example on the previous slide.</p></article></slide>
+<p>Example 2: (artificial) \(f(x,y) = cxy\) on \(0 &lt; x &lt; 1\), \(0 &lt; y &lt; 2\), and 0 otherwise. Determine \(c\). Calculate \(P(X &gt; 0.5, 0 &lt; Y &lt; 1)\) and \(P(Y &gt; X)\).</p></article></slide>
 
 
   <slide class="backdrop"></slide>
